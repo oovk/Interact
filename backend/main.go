@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/gorilla/websocket"
 	"github.com/oovk/interact/pkg/websocket"
-	"golang.org/x/net/websocket"
 )
 
 func serveWS(pool *websocket.Pool, w http.ResponseWriter, r *http.Request) {
